@@ -3,12 +3,12 @@ import React from 'react'
 const Signup = () => {
     return (
         <div>
-            {/* <!-- Button trigger modal --> */}
+            
             <button type="button" className="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">
                 <span className="fa fa-user-plus me-1"></span> Register
             </button>
 
-            {/* <!-- Modal --> */}
+            
             <div className="modal fade" id="signupModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
