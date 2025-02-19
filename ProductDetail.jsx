@@ -9,15 +9,14 @@ const ProductDetail = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
 
-    const productId = Number(id); // Convert id to number if needed
+    const productId = Number(id); 
     const product = DATA.find((item) => item.id === productId);
 
-    // Debugging logs
+    
     console.log("Product ID from URL:", id);
     console.log("Converted Product ID:", productId);
     console.log("Matching Product:", product);
 
-    // Handle case where product is not found
     if (!product) {
         return <h2 className="text-center my-5 text-danger">Product Not Found</h2>;
     }
