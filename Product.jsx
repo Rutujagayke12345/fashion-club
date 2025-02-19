@@ -3,15 +3,14 @@ import { NavLink } from 'react-router-dom';
 import DATA from '../Data';
 
 const Product = () => {
-    const [filter, setFilter] = useState(DATA); // Initialize with all products
+    const [filter, setFilter] = useState(DATA);
 
-    // Function to filter products based on category
+    
     const filterProduct = (category) => {
         const updatedList = DATA.filter((item) => item.category && item.category.toLowerCase() === category.toLowerCase());
         setFilter(updatedList);
     };
 
-    // Function to reset to all products
     const showAllProducts = () => {
         setFilter(DATA);
     };
