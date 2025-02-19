@@ -5,7 +5,6 @@ import Product from './Product';
 const Home = () => {
     return (
         <div>
-            {/* Carousel Section */}
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,7 +49,6 @@ const Home = () => {
                 </button>
             </div>
 
-            {/* Explore More Section */}
             <div className="text-center mt-4">
                 <h2>Discover Our Latest Collection</h2>
                 <p>Find the best fashion trends for men and women</p>
@@ -60,7 +58,6 @@ const Home = () => {
                 </NavLink>
             </div>
 
-            {/* Products Section */}
             <Product />
         </div>
     );
