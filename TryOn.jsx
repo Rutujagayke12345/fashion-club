@@ -65,10 +65,10 @@ const TryOn = () => {
     const { x, y, width, height } = detections.detection.box;
     
     setClothingPosition({
-      x: x - width * 0.2,  // Adjust horizontal position
-      y: y + height * 0.5, // Adjust vertical position (on the torso)
-      width: width * 1.5,   // Adjust width for the clothing item
-      height: height * 2,   // Adjust height for the clothing item (taller for a shirt)
+      x: x - width * 0.2,  
+      y: y + height * 0.5, 
+      width: width * 1.5,   
+      height: height * 2,   
     });
   };
 
@@ -111,7 +111,7 @@ const TryOn = () => {
           playsInline
           style={{
             width: "50%",
-            transform: "scaleX(-1)", // Mirror effect
+            transform: "scaleX(-1)", 
             border: "2px solid black",
           }}
         />
